@@ -24,11 +24,26 @@ In addition, an improvement on duplicating examples from the minority class from
 ## Model Development and Tuning: 
 We developed 4 traditional machine learning models and tuned hyperparameter with Grid Search to find to top candidate model the tuning parameter of each model and Model result are shown in the table below
 
-
 ![messageImage_1662820703087](https://user-images.githubusercontent.com/113247700/189488234-69e9791f-4db0-4bdd-8eeb-df247e2318b0.jpg)
 
 
+## Model Development and Tuning: 
+We developed 4 traditional machine learning models and tuned hyperparameter with Grid Search to find to top candidate model the tuning parameter of each model and Model result are shown in the table below
 
+## Model Performance Evaluation:
+Selected Model : XGBoost
+
+Best Hyperparameter : 'gamma': 0, 'learning_rate': 0.25, 'max_depth': 10, 'n_estimators': 1000 
+
+Overfitting : No overfitting found.
+
+# Deep Learning Part:
+## Deep Learning Model:
+**Creating Network architecture:**
+- Input Layer
+- Hidden Layer compose of 5 hidden layers with node = 12, 48, 64, 48 and 12 respectively
+- Batch Normalization compose of 5 batch normalization layers by using Relu as activation function 
+- Output Layer used sigmoid as activation function
 
 
 
