@@ -148,8 +148,10 @@ Inference Time of all 3 data sets training, validation, and test above 100%
 # Discussion and Conclusion Part :
 ### Conclusion:
 - Traditional machine learning model performs 1%-3% better result than deep learning model for binary classification in term of AUC score but outstanding in term of training time which is 75% better.
-However, the deep learning model also performs better in terms of inference time by 100%-150% over the machine learning model.
-Imbalance class in our use case was improved by oversampling method with SMOTE technique
+- However, the deep learning model also performs better in terms of inference time by 100%-150% over the machine learning model.
+- Accuracy score is equal for both models.
+- Imbalance class in our use case was improved by oversampling method with SMOTE technique
+
 
 ### Discussion: 
 - Although in this use case, traditional machine learning performs better than deep learning in many aspects, to apply the model to the business world we should consider model by business objective as well for example if business need model that deployed in environment predict faster so we could consider deep learning as the better choice with suitable with business objective and operation.
