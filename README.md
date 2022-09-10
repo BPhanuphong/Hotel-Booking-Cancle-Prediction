@@ -56,8 +56,22 @@ Overfitting : No overfitting found.
 ![img](https://user-images.githubusercontent.com/80414593/189488530-95ba05fe-4575-4a57-bc71-81262c35d76a.png)
 
 
+# Discussion and Conclusion Part :
+**Discussion:**
+**Conclusion:**
 
+**Appendix :**
+**References:**
+**Group Member:**
+![image](https://user-images.githubusercontent.com/80414593/189489261-fd989ca7-73e2-4a9a-b1f8-27d1acd636a4.png)
 
+This project is a part of the 
+
+Subject: DADS7202 Deep Learning
+
+Course: Data Analytics and Data Science 
+
+Institution: National Institute of Development Administration (NIDA)
 
 
 
