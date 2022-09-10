@@ -38,15 +38,20 @@ Best Hyperparameter : 'gamma': 0, 'learning_rate': 0.25, 'max_depth': 10, 'n_est
 Overfitting : No overfitting found.
 
 # Deep Learning Part:
-## Deep Learning Model:
 **Creating Network architecture:**
 - Input Layer
 - Hidden Layer compose of 5 hidden layers with node = 12, 48, 64, 48 and 12 respectively
 - Batch Normalization compose of 5 batch normalization layers by using Relu as activation function 
 - Output Layer used sigmoid as activation function
 
+**Training:** 
+- GPU 0: Tesla T4 (UUID: GPU-86b357fa-3ace-7631-5530-b119e8b7cc24)
 
+**Deep Learning Result:**
+![image](https://user-images.githubusercontent.com/80414593/189488489-d358c46f-a6eb-4af6-acf2-7736da8c5a29.png)
 
+- Train vs Validation
+![image](https://user-images.githubusercontent.com/80414593/189488530-95ba05fe-4575-4a57-bc71-81262c35d76a.png)
 
 
 
