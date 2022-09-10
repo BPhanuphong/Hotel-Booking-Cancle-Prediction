@@ -22,21 +22,21 @@
 - **Predicted column:** is_Canceled
 - **Data Type:**
 
+![image](https://user-images.githubusercontent.com/80414593/189491105-8c81c0af-9238-42de-a65d-2c1490786625.png)
 
-![image](https://user-images.githubusercontent.com/80414593/189489505-c33ec5d9-0262-4eec-a4a3-e8f1de39ce85.png)
 
 ## Data Exploration and Engineering Part:
 ### Exploratory Data Analysis:
 - Bar chart to see imbalanced data.
 - Box plot and Histogram to see
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Outlier
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Outlier
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Distribution
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Distribution
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Skewness
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Skewness
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mean, Median, Min, Max
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Mean, Median, Min, Max
 
 - Correlation Matrix to the correlation between attributes.
 
@@ -127,11 +127,11 @@
 
 - For our case study , traditional  machine learning model perform better than deep learning model in term of 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Training time of all 3 data set training,validation and test around 75 %
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Training time of all 3 data set training,validation and test around 75 %
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AUC Score  for all 3 data set which 3% for Train set and the Test set less than 0.00% which no significant.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - AUC Score  for all 3 data set which 3% for Train set and the Test set less than 0.00% which no significant.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F1 score of class 1 and 0 for Train and Validation set around 1% - 3%
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - F1 score of class 1 and 0 for Train and Validation set around 1% - 3%
 
 - While the deep learning model performs better in 
 Inference Time of all 3 data sets training, validation, and test above 100%
