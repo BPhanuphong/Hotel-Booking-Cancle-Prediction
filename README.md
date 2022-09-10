@@ -80,16 +80,17 @@
 ### Model Development and Tuning: 
 - We developed 4 traditional machine learning models and tuned hyperparameter with Grid Search to find to top candidate model the tuning parameter of each model and Model result are shown in the table below
 
-![img](https://user-images.githubusercontent.com/113247700/189488234-69e9791f-4db0-4bdd-8eeb-df247e2318b0.jpg)
-
-
-### Model Development and Tuning: 
-- We developed 4 traditional machine learning models and tuned hyperparameter with Grid Search to find to top candidate model the tuning parameter of each model and Model result are shown in the table below
+![image](https://user-images.githubusercontent.com/80414593/189491432-51161c2d-260e-4d90-82e6-be8af0bdfe65.png)
 
 ### Model Performance Evaluation:
 - Selected Model : XGBoost
 - Best Hyperparameter : 'gamma': 0, 'learning_rate': 0.25, 'max_depth': 10, 'n_estimators': 1000 
 - Overfitting : No overfitting found.
+
+![image](https://user-images.githubusercontent.com/80414593/189491451-c0e70fc4-94ce-4052-870c-3b4f8fae515c.png)
+
+![img](https://user-images.githubusercontent.com/113247700/189488234-69e9791f-4db0-4bdd-8eeb-df247e2318b0.jpg)
+
 
 # Deep Learning Part:
 #### Creating Network architecture:
