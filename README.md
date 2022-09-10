@@ -16,7 +16,7 @@
 ## Introduction:
 - The purpose of this project is to compare the performance of tuned models between traditional Machine Learning Models (using scikit-learn and Grid Search to tune) and deep learning in MLP model (using TensorFlow and tuned dense layer, epoch, batch size, batch normalization, regularization) on tabular dataset.
 - Use Hotel Booking Demand data set to predict booking cancellations in binary classification. (0: cancel, 1: not cancel)
-- Tranditional Model: Logistic Regression, Decision Tree, Random Forest, XGBoost Calssifiter.
+- Traditional Model: Logistic Regression, Decision Tree, Random Forest, XGBoost Classifier.
 
 ## Assumption: 
 - Based on our prior knowledge, traditional ML models might perform binary classification better than deep learning models on tabular datasets. Due to the complexities of deep learning, the model will take much more time to configure than traditional ML.
