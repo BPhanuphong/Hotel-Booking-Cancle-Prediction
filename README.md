@@ -1,8 +1,17 @@
 # Traditional Machine Learning and Multi-Layer Perception (MLP) Performance comparison on Binary Classification Data Set Study
 
+### README-File 
+- hotel_bookings.csv : Data source of hotel bookings
+- EDA_Hotel Booking Demand.ipynb : Data description and Data exploration
+- Traditional_ml.ipynb : Source code for traditional machine learning model
+- MLP_dl.ipynb : Source code for MLP deep learning model
+- Training Records. xlsx : The results of experiment from ML Model and MLP deep learning Model
+
 ## Executive Summary:
--
--
+- Traditional machine learning model performs better than the deep learning model for binary classification in terms of AUC score but is outstanding in terms of training time.
+- However, the deep learning model also performs better in terms of inference time.
+- To choose a suitable model in the real world situation the business objective should be the consideration as well.
+- Imbalance class in our use case was improved by oversampling method with SMOTE technique
 
 ## Introduction:
 - The purpose of this project is to compare the performance of tuned models between traditional Machine Learning Models (using scikit-learn and Grid Search to tune) and deep learning in MLP model (using TensorFlow and tuned dense layer, epoch, batch size, batch normalization, regularization) on tabular dataset.
@@ -11,7 +20,6 @@
 
 ## Assumption: 
 - Based on our prior knowledge, traditional ML models might perform binary classification better than deep learning models on tabular datasets. Due to the complexities of deep learning, the model will take much more time to configure than traditional ML.
-
 
 ## Data Set Overview:
 - **Task:** Binary Classification 
@@ -138,10 +146,15 @@ Inference Time of all 3 data sets training, validation, and test above 100%
 
 
 # Discussion and Conclusion Part :
-
-### Discussion:
-
 ### Conclusion:
+- Traditional machine learning model performs 1%-3% better result than deep learning model for binary classification in term of AUC score but outstanding in term of training time which is 75% better.
+However, the deep learning model also performs better in terms of inference time by 100%-150% over the machine learning model.
+Imbalance class in our use case was improved by oversampling method with SMOTE technique
+
+### Discussion: 
+- Although in this use case, traditional machine learning performs better than deep learning in many aspects, to apply the model to the business world we should consider model by business objective as well for example if business need model that deployed in environment predict faster so we could consider deep learning as the better choice with suitable with business objective and operation.
+
+
 
 ## Appendix : 
 ### References:
