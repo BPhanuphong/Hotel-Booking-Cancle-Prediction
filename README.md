@@ -10,7 +10,7 @@
 ## Executive Summary:
 - Traditional machine learning model performs better than the deep learning model for binary classification in terms of AUC score but is outstanding in terms of training time.
 - However, the deep learning model also performs better in terms of inference time.
-- To choose a suitable model in the real world situation the business objective should be the consideration as well.
+- To choose a suitable model in a real-world situation the business objective should be in consideration as well.
 - Imbalance class in our use case was improved by oversampling method with SMOTE technique
 
 ## Introduction:
