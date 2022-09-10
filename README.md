@@ -72,7 +72,7 @@
 - In addition, an improvement on duplicating examples from the minority class from the over-sample technique is to synthesize new examples from the minority class. This is a type of data augmentation for tabular data and can be the very effective and most widely used approach to synthesizing new examples called the **Synthetic Minority Oversampling (SMOTE) Technique** was used in this case.
 
 ## Traditional Machine Learning Part 
-- Data Splitting (Train/Validate/Test):
+### Data Splitting (Train/Validate/Test):
 
 ![image](https://user-images.githubusercontent.com/80414593/189491748-a7055280-30fe-418e-81e3-2989f6dda46b.png)
 
