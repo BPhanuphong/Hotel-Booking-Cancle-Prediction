@@ -82,7 +82,7 @@
 ## Traditional Machine Learning Part 
 ### Data Splitting (Train/Validate/Test):
 
-![image](https://user-images.githubusercontent.com/80414593/189491748-a7055280-30fe-418e-81e3-2989f6dda46b.png)
+![messageImage_1662824056614](https://user-images.githubusercontent.com/80414593/189492802-6136484d-3a20-44b6-9afa-4c94e071b806.jpg)
 
 ### Model Development and Tuning: 
 - We developed 4 traditional machine learning models and tuned hyperparameter with Grid Search to find to top candidate model the tuning parameter of each model and Model result are shown in the table below
@@ -94,8 +94,7 @@
 - Best Hyperparameter : 'gamma': 0, 'learning_rate': 0.25, 'max_depth': 10, 'n_estimators': 1000 
 - Overfitting : No overfitting found.
 
-![image](https://user-images.githubusercontent.com/80414593/189491451-c0e70fc4-94ce-4052-870c-3b4f8fae515c.png)
-
+![image](https://user-images.githubusercontent.com/80414593/189492932-d30d067e-374e-4d93-8f33-1efa2ad19bf6.png)
 ![img](https://user-images.githubusercontent.com/113247700/189488234-69e9791f-4db0-4bdd-8eeb-df247e2318b0.jpg)
 
 
@@ -120,8 +119,7 @@
 ### Deep Learning Result:
 - The results of the deep learning model are shown in the table below and overfitting is not found.
 
-![img](https://user-images.githubusercontent.com/80414593/189488489-d358c46f-a6eb-4af6-acf2-7736da8c5a29.png)
-
+![image](https://user-images.githubusercontent.com/80414593/189492979-b3d21c8c-2371-4aa0-966e-9779b2b4cbda.png)
 
 
 **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Train vs Validation**
