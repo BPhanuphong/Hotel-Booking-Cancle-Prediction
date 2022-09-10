@@ -9,6 +9,45 @@
 - Use Hotel Booking Demand data set to predict booking cancellations in binary classification. (0: cancel, 1: not cancel)
 - Tranditional Model: Logistic Regression, Decision Tree, Random Forest, XGBoost Calssifiter.
 
+## Data Set Overview:
+- **Task:** Binary Classification 
+- **Objective:** To predict hotel cancelation transaction (Cancelled Yes or No)
+- **Data Set:** Hotel Booking Demand
+- **Data source:** https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand?datasetId=511638&sortBy=voteCount&searchQuery=keras
+- **Data shape:** 119,390 records with 32 Columns
+- **Predicted column:** is_Canceled
+- **Data Type:**
+
+
+![image](https://user-images.githubusercontent.com/80414593/189489505-c33ec5d9-0262-4eec-a4a3-e8f1de39ce85.png)
+
+## Data Exploration and Engineering Part:
+### **Exploratory Data Analysis:**
+- Bar chart to see imbalanced data.
+- Box plot and Histogram to see
+- Outlier
+- Distribution
+- Skewness
+- Mean, Median, Min, Max
+- Correlation Matrix to the correlation between attributes.
+
+**Data Validation:**
+- Data Imputation: We found that there are only 4 columns that have a null value which are company, agent, country, and children
+- Handle missing values : 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Company has 94% Null so we drop this column.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Agent and country columns were replaced by mode.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Children column was replaced by mean.
+
+**Feature Selection & Engineering:**
+Create new 2 columns
+total_members: sum of adults, babies, and children
+total_stay: sum of stays_in_weekend_nights and stays_in_week_nights
+Drop 10 columns: 
+
+
 ## Data Pre-processing:
 - **Categorical:** transform data using Label Encoder
 - **Numerical:** transform data using scaling values 
