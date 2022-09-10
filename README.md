@@ -44,18 +44,18 @@
 - Data Imputation: We found that there are only 4 columns that have a null value which are company, agent, country, and children
 - Handle missing values : 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Company has 94% Null so we drop this column.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Company has 94% Null so we drop this column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Agent and country columns were replaced by mode.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Agent and country columns were replaced by mode.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Children column was replaced by mean.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Children column was replaced by mean.
 
 ### Feature Selection & Engineering:
 - Create new 2 columns
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; total_members: sum of adults, babies, and children
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. total_members: sum of adults, babies, and children
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; total_stay: sum of stays_in_weekend_nights and stays_in_week_nights
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. total_stay: sum of stays_in_weekend_nights and stays_in_week_nights
 
 - Drop 10 columns: 
 
@@ -74,8 +74,7 @@
 ## Traditional Machine Learning Part 
 - Data Splitting (Train/Validate/Test):
 
-![messageImage_1662823365754](https://user-images.githubusercontent.com/80414593/189490556-77a4f226-91d9-453c-8353-bc4017afc356.jpg)
-
+![image](https://user-images.githubusercontent.com/80414593/189491748-a7055280-30fe-418e-81e3-2989f6dda46b.png)
 
 ### Model Development and Tuning: 
 - We developed 4 traditional machine learning models and tuned hyperparameter with Grid Search to find to top candidate model the tuning parameter of each model and Model result are shown in the table below
