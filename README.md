@@ -18,13 +18,13 @@
 This data set is not quite large so oversampling is in our consideration.
 In addition, an improvement on duplicating examples from the minority class from the over-sample technique is to synthesize new examples from the minority class. This is a type of data augmentation for tabular data and can be the very effective and most widely used approach to synthesizing new examples called the **Synthetic Minority Oversampling (SMOTE) Technique** was used in this case.
 
-![image](https://user-images.githubusercontent.com/80414593/189488119-d97b049a-b100-4569-b82c-76d9fc345aed.png)
+![img](https://user-images.githubusercontent.com/80414593/189488119-d97b049a-b100-4569-b82c-76d9fc345aed.png)
 
 
 ## Model Development and Tuning: 
 We developed 4 traditional machine learning models and tuned hyperparameter with Grid Search to find to top candidate model the tuning parameter of each model and Model result are shown in the table below
 
-![messageImage_1662820703087](https://user-images.githubusercontent.com/113247700/189488234-69e9791f-4db0-4bdd-8eeb-df247e2318b0.jpg)
+![img](https://user-images.githubusercontent.com/113247700/189488234-69e9791f-4db0-4bdd-8eeb-df247e2318b0.jpg)
 
 
 ## Model Development and Tuning: 
@@ -48,10 +48,12 @@ Overfitting : No overfitting found.
 - GPU 0: Tesla T4 (UUID: GPU-86b357fa-3ace-7631-5530-b119e8b7cc24)
 
 **Deep Learning Result:**
-![image](https://user-images.githubusercontent.com/80414593/189488489-d358c46f-a6eb-4af6-acf2-7736da8c5a29.png)
+
+![img](https://user-images.githubusercontent.com/80414593/189488489-d358c46f-a6eb-4af6-acf2-7736da8c5a29.png)
 
 - Train vs Validation
-![image](https://user-images.githubusercontent.com/80414593/189488530-95ba05fe-4575-4a57-bc71-81262c35d76a.png)
+ 
+![img](https://user-images.githubusercontent.com/80414593/189488530-95ba05fe-4575-4a57-bc71-81262c35d76a.png)
 
 
 
