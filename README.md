@@ -9,6 +9,10 @@
 - Use Hotel Booking Demand data set to predict booking cancellations in binary classification. (0: cancel, 1: not cancel)
 - Tranditional Model: Logistic Regression, Decision Tree, Random Forest, XGBoost Calssifiter.
 
+## Assumption: 
+- Based on our prior knowledge, traditional ML models might perform binary classification better than deep learning models on tabular datasets. Due to the complexities of deep learning, the model will take much more time to configure than traditional ML.
+
+
 ## Data Set Overview:
 - **Task:** Binary Classification 
 - **Objective:** To predict hotel cancelation transaction (Cancelled Yes or No)
@@ -47,14 +51,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Children column was replaced by mean.
 
 ### Feature Selection & Engineering:
-Create new 2 columns
+- Create new 2 columns
 
-total_members: sum of adults, babies, and children
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; total_members: sum of adults, babies, and children
 
-total_stay: sum of stays_in_weekend_nights and stays_in_week_nights
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; total_stay: sum of stays_in_weekend_nights and stays_in_week_nights
 
-Drop 10 columns: 
-
+- Drop 10 columns: 
 
 ![image](https://user-images.githubusercontent.com/80414593/189490182-7968566e-e0ff-4667-b854-e4203b5ade46.png)
 
@@ -64,43 +67,50 @@ Drop 10 columns:
 
 
 ### Imbalance Handling:
-Our case is a binary classification problem and we found that the proportion of predicted value 0:1 is around 63:37, therefore; we decided to apply re-sampling strategies to obtain a more balanced data distribution as an effective solution to the imbalance problem.
-This data set is not quite large so oversampling is in our consideration.
-In addition, an improvement on duplicating examples from the minority class from the over-sample technique is to synthesize new examples from the minority class. This is a type of data augmentation for tabular data and can be the very effective and most widely used approach to synthesizing new examples called the **Synthetic Minority Oversampling (SMOTE) Technique** was used in this case.
+- Our case is a binary classification problem and we found that the proportion of predicted value 0:1 is around 63:37, therefore; we decided to apply re-sampling strategies to obtain a more balanced data distribution as an effective solution to the imbalance problem.
+- This data set is not quite large so oversampling is in our consideration.
+- In addition, an improvement on duplicating examples from the minority class from the over-sample technique is to synthesize new examples from the minority class. This is a type of data augmentation for tabular data and can be the very effective and most widely used approach to synthesizing new examples called the **Synthetic Minority Oversampling (SMOTE) Technique** was used in this case.
 
 ## Traditional Machine Learning Part 
 - Data Splitting (Train/Validate/Test):
 
-![img](https://user-images.githubusercontent.com/80414593/189488119-d97b049a-b100-4569-b82c-76d9fc345aed.png)
+![messageImage_1662823365754](https://user-images.githubusercontent.com/80414593/189490556-77a4f226-91d9-453c-8353-bc4017afc356.jpg)
 
 
 ### Model Development and Tuning: 
-We developed 4 traditional machine learning models and tuned hyperparameter with Grid Search to find to top candidate model the tuning parameter of each model and Model result are shown in the table below
+- We developed 4 traditional machine learning models and tuned hyperparameter with Grid Search to find to top candidate model the tuning parameter of each model and Model result are shown in the table below
 
 ![img](https://user-images.githubusercontent.com/113247700/189488234-69e9791f-4db0-4bdd-8eeb-df247e2318b0.jpg)
 
 
 ### Model Development and Tuning: 
-We developed 4 traditional machine learning models and tuned hyperparameter with Grid Search to find to top candidate model the tuning parameter of each model and Model result are shown in the table below
+- We developed 4 traditional machine learning models and tuned hyperparameter with Grid Search to find to top candidate model the tuning parameter of each model and Model result are shown in the table below
 
 ### Model Performance Evaluation:
-Selected Model : XGBoost
-
-Best Hyperparameter : 'gamma': 0, 'learning_rate': 0.25, 'max_depth': 10, 'n_estimators': 1000 
-
-Overfitting : No overfitting found.
+- Selected Model : XGBoost
+- Best Hyperparameter : 'gamma': 0, 'learning_rate': 0.25, 'max_depth': 10, 'n_estimators': 1000 
+- Overfitting : No overfitting found.
 
 # Deep Learning Part:
-### Creating Network architecture:
-- Input Layer
-- Hidden Layer compose of 5 hidden layers with node = 12, 48, 64, 48 and 12 respectively
-- Batch Normalization compose of 5 batch normalization layers by using Relu as activation function 
-- Output Layer used sigmoid as activation function
+#### Creating Network architecture:
 
-### Training:
+![image](https://user-images.githubusercontent.com/80414593/189491006-6c174e43-6d1e-41e5-b98a-39de4653263b.png)
+
+
+- In each dataset, the number of input values is equal to the number of features which is 23  and there is only one output value for classification. 
+- Hidden Layer compose of 5 hidden layers with node = 12, 48, 64, 48, and 12 respectively 
+- Batch Normalization compose of 5 batch normalization layers by using Relu as the activation function for each layer.
+- Dropout is not applied.
+- Output Layer applied sigmoid as activation function
+
+#### Optimizer:
+- We use default optimizer ‘Adam’ to tune for best batch size and best epoch which are 200 and 200, respectively. 
+#### Training: 
+- Single loss and accuracy score strategy was applied to find the best model with a learning rate of 0.001.
 - GPU 0: Tesla T4 (UUID: GPU-86b357fa-3ace-7631-5530-b119e8b7cc24)
 
 ### Deep Learning Result:
+- The results of the deep learning model are shown in the table below and overfitting is not found.
 
 ![img](https://user-images.githubusercontent.com/80414593/189488489-d358c46f-a6eb-4af6-acf2-7736da8c5a29.png)
 
@@ -111,17 +121,34 @@ Overfitting : No overfitting found.
 ![img](https://user-images.githubusercontent.com/80414593/189488530-95ba05fe-4575-4a57-bc71-81262c35d76a.png)
 
 
+# The Result of the Study Part: 
+
+![image](https://user-images.githubusercontent.com/80414593/189490838-d126bc3b-ca54-452e-9fe2-b34a5d90a3bf.png)
+
+- For our case study , traditional  machine learning model perform better than deep learning model in term of 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Training time of all 3 data set training,validation and test around 75 %
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AUC Score  for all 3 data set which 3% for Train set and the Test set less than 0.00% which no significant.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F1 score of class 1 and 0 for Train and Validation set around 1% - 3%
+
+- While the deep learning model performs better in 
+Inference Time of all 3 data sets training, validation, and test above 100%
+
+
 # Discussion and Conclusion Part :
 
-**Discussion:**
+### Discussion:
 
-**Conclusion:**
+### Conclusion:
 
-**Appendix :**
+## Appendix : 
+### References:
+https://machinelearningmastery.com/hyperparameter-optimization-with-random-search-and-grid-search/
+https://towardsdatascience.com/grid-search-for-model-tuning-3319b259367e
 
-**References:**
-
-**Group Member:**
+### Group Member:
 
 ![image](https://user-images.githubusercontent.com/80414593/189489261-fd989ca7-73e2-4a9a-b1f8-27d1acd636a4.png)
 
